@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Aula09.Comum.NotificationPattern
+namespace TinderRPG.Comum.NotificationPattern
 {
     public class NotificationResultException
     {

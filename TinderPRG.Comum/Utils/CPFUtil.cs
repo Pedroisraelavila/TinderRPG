@@ -1,4 +1,4 @@
-﻿namespace Aula09.Comum
+﻿namespace TinderRPG.Comum
 {
     public class CPFUtil
     {

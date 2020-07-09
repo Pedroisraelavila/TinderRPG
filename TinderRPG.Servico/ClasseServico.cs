@@ -1,5 +1,5 @@
 ﻿
-using Aula09.Comum.NotificationPattern;
+using TinderRPG.Comum.NotificationPattern;
 using System;
 using System.Collections.Generic;
 using System.Net.Mail;

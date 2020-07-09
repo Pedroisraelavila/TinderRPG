@@ -1,4 +1,4 @@
-﻿namespace Aula09.Comum.NotificationPattern
+﻿namespace TinderRPG.Comum.NotificationPattern
 {
     public enum NotificationErrorType
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Aula09.Comum.NotificationPattern;
+using TinderRPG.Comum.NotificationPattern;
 using Microsoft.AspNetCore.Mvc;
 using TinderRPG.Dominio.Entidades;
 using TinderRPG.Servico;
