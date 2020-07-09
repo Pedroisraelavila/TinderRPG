@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/service/api.service';
+import { Classe } from 'src/model/classe';
 
 @Component({
   selector: 'app-classe-todos',

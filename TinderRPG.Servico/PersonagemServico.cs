@@ -8,6 +8,7 @@ using TinderRPG.Servico.Base;
 
 namespace TinderRPG.Servico
 {
+
     public class PersonagemServico
     {
         private readonly PersonagemRepositorio _personagemRepositorio;
