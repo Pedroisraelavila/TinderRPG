@@ -1,0 +1,16 @@
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Servico\bin\Debug\netcoreapp3.1\TinderRPG.Servico.deps.json
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Servico\bin\Debug\netcoreapp3.1\TinderRPG.Servico.dll
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Servico\bin\Debug\netcoreapp3.1\TinderRPG.Servico.pdb
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Servico\obj\Debug\netcoreapp3.1\TinderRPG.Servico.csprojAssemblyReference.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Servico\obj\Debug\netcoreapp3.1\TinderRPG.Servico.csproj.CoreCompileInputs.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Servico\obj\Debug\netcoreapp3.1\TinderRPG.Servico.AssemblyInfoInputs.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Servico\obj\Debug\netcoreapp3.1\TinderRPG.Servico.AssemblyInfo.cs
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Servico\obj\Debug\netcoreapp3.1\TinderRPG.Servico.dll
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Servico\obj\Debug\netcoreapp3.1\TinderRPG.Servico.pdb
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Servico\bin\Debug\netcoreapp3.1\TinderPRG.Comum.dll
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Servico\bin\Debug\netcoreapp3.1\TinderRPG.Dominio.dll
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Servico\bin\Debug\netcoreapp3.1\TinderRPG.Infra.dll
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Servico\bin\Debug\netcoreapp3.1\TinderPRG.Comum.pdb
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Servico\bin\Debug\netcoreapp3.1\TinderRPG.Infra.pdb
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Servico\bin\Debug\netcoreapp3.1\TinderRPG.Dominio.pdb
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Servico\obj\Debug\netcoreapp3.1\TinderRPG.Servico.csproj.CopyComplete

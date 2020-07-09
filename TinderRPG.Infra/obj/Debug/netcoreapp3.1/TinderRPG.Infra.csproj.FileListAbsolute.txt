@@ -1,0 +1,12 @@
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Infra\bin\Debug\netcoreapp3.1\TinderRPG.Infra.deps.json
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Infra\bin\Debug\netcoreapp3.1\TinderRPG.Infra.dll
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Infra\obj\Debug\netcoreapp3.1\TinderRPG.Infra.csprojAssemblyReference.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Infra\obj\Debug\netcoreapp3.1\TinderRPG.Infra.AssemblyInfoInputs.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Infra\obj\Debug\netcoreapp3.1\TinderRPG.Infra.AssemblyInfo.cs
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Infra\bin\Debug\netcoreapp3.1\TinderRPG.Dominio.dll
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Infra\obj\Debug\netcoreapp3.1\TinderRPG.Infra.csproj.CoreCompileInputs.cache
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Infra\bin\Debug\netcoreapp3.1\TinderRPG.Infra.pdb
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Infra\bin\Debug\netcoreapp3.1\TinderRPG.Dominio.pdb
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Infra\obj\Debug\netcoreapp3.1\TinderRPG.Infra.csproj.CopyComplete
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Infra\obj\Debug\netcoreapp3.1\TinderRPG.Infra.dll
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Infra\obj\Debug\netcoreapp3.1\TinderRPG.Infra.pdb

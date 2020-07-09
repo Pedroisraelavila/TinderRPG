@@ -1,0 +1,12 @@
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\bin\Debug\netcoreapp3.1\TinderRPG.WebAPI.exe
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\obj\Debug\netcoreapp3.1\TinderRPG.WebAPI.csprojAssemblyReference.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\obj\Debug\netcoreapp3.1\TinderRPG.WebAPI.AssemblyInfoInputs.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\obj\Debug\netcoreapp3.1\TinderRPG.WebAPI.AssemblyInfo.cs
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\obj\Debug\netcoreapp3.1\TinderRPG.WebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\TinderRPG.WebAPI.StaticWebAssets.Manifest.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\TinderRPG.WebAPI.StaticWebAssets.xml
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\obj\Debug\netcoreapp3.1\TinderRPG.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.WebAPI\obj\Debug\netcoreapp3.1\TinderRPG.WebAPI.MvcApplicationPartsAssemblyInfo.cache

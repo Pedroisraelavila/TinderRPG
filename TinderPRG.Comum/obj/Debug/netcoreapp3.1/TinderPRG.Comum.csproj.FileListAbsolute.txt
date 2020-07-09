@@ -1,0 +1,9 @@
+C:\Users\paulo\Source\Repos\TinderRPG\TinderPRG.Comum\bin\Debug\netcoreapp3.1\TinderPRG.Comum.deps.json
+C:\Users\paulo\Source\Repos\TinderRPG\TinderPRG.Comum\bin\Debug\netcoreapp3.1\TinderPRG.Comum.dll
+C:\Users\paulo\Source\Repos\TinderRPG\TinderPRG.Comum\bin\Debug\netcoreapp3.1\TinderPRG.Comum.pdb
+C:\Users\paulo\Source\Repos\TinderRPG\TinderPRG.Comum\obj\Debug\netcoreapp3.1\TinderPRG.Comum.csprojAssemblyReference.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderPRG.Comum\obj\Debug\netcoreapp3.1\TinderPRG.Comum.csproj.CoreCompileInputs.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderPRG.Comum\obj\Debug\netcoreapp3.1\TinderPRG.Comum.AssemblyInfoInputs.cache
+C:\Users\paulo\Source\Repos\TinderRPG\TinderPRG.Comum\obj\Debug\netcoreapp3.1\TinderPRG.Comum.AssemblyInfo.cs
+C:\Users\paulo\Source\Repos\TinderRPG\TinderPRG.Comum\obj\Debug\netcoreapp3.1\TinderPRG.Comum.dll
+C:\Users\paulo\Source\Repos\TinderRPG\TinderPRG.Comum\obj\Debug\netcoreapp3.1\TinderPRG.Comum.pdb
