@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
+import { ApiService } from 'src/app/service/api.service';
 
 @Component({
   selector: 'app-classe-novo',
@@ -7,9 +10,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClasseNovoComponent implements OnInit {
 
-  constructor() { }
+  productForm: FormGroup;
+  isLoadingResults = false;
+  constructor(private router: Router, private api: ApiService, private formBuilder: FormBuilder) { }
 
-  ngOnInit(): void {
+
+  ngOnInit() {
+    this.productForm = this.formBuilder.group({
+   'idClasse' : [null, Validators.required],
+   'Nome' : [null, Validators.required],
+   'Descricao' : [null, Validators.required],
+   'Ativo' : [null, Validators.required]
+ });
+ }
+
+ addClasse(form: NgForm) {
+    this.isLoadingResults = true;
+    this.api.addClasse(form)
+      .subscribe(res => {
+          const id = res['idClasse'];
+          this.isLoadingResults = false;
+          this.router.navigate(['/classe-detalhe', id]);
+        }, (err) => {
+          console.log(err);
+          this.isLoadingResults = false;
+        });
   }
-
 }
