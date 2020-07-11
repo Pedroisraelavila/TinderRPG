@@ -1,1 +1,16 @@
-<p>classe-editar works!</p>
+<div>
+    <h3>Editar Classe</h3>
+  </div>
+  <form class="example-container" [formGroup]="productForm" (ngSubmit)="updateClasse(productForm.value)">
+    <mat-form-field>
+      <input matInput name="Nome" placeholder="Nome da Classe" formControlName="Nome">
+    </mat-form-field>
+    <mat-form-field>
+      <textarea  matInput name="Descricao" placeholder="Descrição da Classe" formControlName="Descricao"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput name="Ativo" placeholder="ativo" formControlName="ativo">
+    </mat-form-field>
+
+    <button type="submit" [disabled]="!productForm.valid" mat-button color="primary" >Editar</button>
+  </form>

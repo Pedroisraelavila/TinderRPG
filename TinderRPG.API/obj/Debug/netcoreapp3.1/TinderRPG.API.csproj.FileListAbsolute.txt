@@ -132,6 +132,11 @@ C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\bin\Debug\netcoreapp3.1\Swas
 C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\bin\Debug\netcoreapp3.1\System.Web.Cors.dll
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\bin\Debug\netcoreapp3.1\System.Web.Http.Cors.dll
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\obj\Debug\netcoreapp3.1\TinderRPG.API.csproj.CoreCompileInputs.cache
 C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\obj\Debug\netcoreapp3.1\TinderRPG.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\paulo\source\repos\TinderRPG\TinderRPG.API\obj\Debug\netcoreapp3.1\TinderRPG.API.MvcApplicationPartsAssemblyInfo.cache

@@ -8,8 +8,9 @@ import { Classe } from 'src/model/classe';
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
-const apiUrl = 'http://localhost:5000/api/classe-todos';
-//const apiUrl = 'http://localhost:52985/api/classe-todos';
+//const apiUrl = 'http://localhost:5000/api/classe';
+const apiUrl = 'http://localhost:52985/api/classe';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -17,44 +18,45 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getProdutos (): Observable<Classe[]> {
+  getClasses (): Observable<Classe[]> {
+    const url = `${apiUrl}/Ativos`;
     return this.http.get<Classe[]>(apiUrl)
       .pipe(
-        tap(produtos => console.log('leu os produtos')),
-        catchError(this.handleError('getProdutos', []))
+        tap(classes => console.log('leu as classes')),
+        catchError(this.handleError('getClasses', []))
       );
   }
 
-  getProduto(id: number): Observable<Classe> {
+  getClasse(id: number): Observable<Classe> {
     const url = `${apiUrl}/${id}`;
     return this.http.get<Classe>(url).pipe(
-      tap(_ => console.log(`leu o produto id=${id}`)),
-      catchError(this.handleError<Classe>(`getProduto id=${id}`))
+      tap(_ => console.log(`leu a classe id=${id}`)),
+      catchError(this.handleError<Classe>(`getClasse id=${id}`))
     );
   }
 
-  addProduto (produto): Observable<Classe> {
-    return this.http.post<Classe>(apiUrl, produto, httpOptions).pipe(
+  addClasse (classe): Observable<Classe> {
+    return this.http.post<Classe>(apiUrl, classe, httpOptions).pipe(
       // tslint:disable-next-line:no-shadowed-variable
-      tap((produto: Classe) => console.log(`adicionou o produto com w/ id=${produto._id}`)),
-      catchError(this.handleError<Classe>('addProduto'))
+      tap((produto: Classe) => console.log(`adicionou a classe com w/ id=${produto.idClasse}`)),
+      catchError(this.handleError<Classe>('addClasse'))
     );
   }
 
-  updateProduto(id, produto): Observable<any> {
+  updateClasse(id, classe): Observable<any> {
     const url = `${apiUrl}/${id}`;
-    return this.http.put(url, produto, httpOptions).pipe(
-      tap(_ => console.log(`atualiza o produco com id=${id}`)),
-      catchError(this.handleError<any>('updateProduto'))
+    return this.http.put(url, classe, httpOptions).pipe(
+      tap(_ => console.log(`atualiza a classe com id=${id}`)),
+      catchError(this.handleError<any>('updateClasse'))
     );
   }
 
-  deleteProduto (id): Observable<Classe> {
-    const url = `${apiUrl}/delete/${id}`;
+  deleteClasse (id): Observable<Classe> {
+    const url = `${apiUrl}/Excluir/${id}`;
 
     return this.http.delete<Classe>(url, httpOptions).pipe(
-      tap(_ => console.log(`remove o produto com id=${id}`)),
-      catchError(this.handleError<Classe>('deleteProduto'))
+      tap(_ => console.log(`remove a classe com id=${id}`)),
+      catchError(this.handleError<Classe>('deleteClasse'))
     );
   }
 

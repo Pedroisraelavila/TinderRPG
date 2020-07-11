@@ -8,10 +8,21 @@ import { Classe } from 'src/model/classe';
   styleUrls: ['./classe-todos.component.css']
 })
 export class ClasseTodosComponent implements OnInit {
+  displayedColumns: string[] = [ "idClasse", "Nome", "Descricao", "Ativo" ];
+  dataSource: Classe[];
+  isLoadingResults = false;
+  constructor(private _api: ApiService) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    this._api.getClasses()
+    .subscribe(res => {
+      this.dataSource = res;
+      console.log(this.dataSource);
+      this.isLoadingResults = false;
+    }, err => {
+      console.log(err);
+      this.isLoadingResults = false;
+    });
   }
 
 }

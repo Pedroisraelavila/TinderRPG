@@ -43,6 +43,7 @@ namespace TinderRPG.API
             });
 
             services.AddMvc();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,7 +59,8 @@ namespace TinderRPG.API
             app.UseSwaggerUI(c => {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "teste");
             });
-
+            app.UseStaticFiles();
+            app.UseCors(option => option.AllowAnyOrigin()); 
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>

@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinderRPG.Infra", "TinderRP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinderPRG.Comum", "TinderPRG.Comum\TinderPRG.Comum.csproj", "{3C96471C-4ED1-4913-97BC-6805124B9139}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinderRPG.API", "TinderRPG.API\TinderRPG.API.csproj", "{27FC4FF2-F4B0-4997-9928-67DBF123F3F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinderRPG.API", "TinderRPG.API\TinderRPG.API.csproj", "{27FC4FF2-F4B0-4997-9928-67DBF123F3F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
