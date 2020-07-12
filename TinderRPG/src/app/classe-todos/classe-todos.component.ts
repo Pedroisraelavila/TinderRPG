@@ -8,7 +8,7 @@ import { Classe } from 'src/model/classe';
   styleUrls: ['./classe-todos.component.css']
 })
 export class ClasseTodosComponent implements OnInit {
-  displayedColumns: string[] = [ "idClasse", "Nome", "Descricao", "Ativo" ];
+  displayedColumns: string[] = [ "idClasse", "nome", "descricao", "acao" ];
   dataSource: Classe[];
   isLoadingResults = false;
   constructor(private _api: ApiService) { }

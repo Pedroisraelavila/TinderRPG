@@ -19,7 +19,7 @@ namespace TinderRPG.Infra.Base
         public T ListarUm(params object[] keys)
         {
             return Entidade.Find(keys);
-        } 
+        }
         public List<T> ListarTodos()
         {
             return Contexto

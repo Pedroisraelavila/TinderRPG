@@ -21,7 +21,7 @@ namespace TinderRPG.Servico
         public NotificationResult Salvar(Classe ent)
         {
             var notificationResult = new NotificationResult();
-
+             
             try
             {
                 ent.Ativo = true;
@@ -48,6 +48,11 @@ namespace TinderRPG.Servico
         public IEnumerable<Classe> ListarAtivos()
         {
             return _classeRepositorio.ListarAtivos();
+        }
+
+        public Classe BuscarPorId(int id)
+        {
+            return _classeRepositorio.BuscarPorId(id);
         }
 
         public string Excluir(Classe entidade)

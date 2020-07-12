@@ -19,20 +19,22 @@ export class ClasseEditarComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute, private api: ApiService, private formBuilder: FormBuilder) { }
 
   ngOnInit() {
-    this.getClasse(this.route.snapshot.params['idClasse']);
+    this.getClasse(this.route.snapshot.params['id']);
     this.productForm = this.formBuilder.group({
-   'Nome' : [null, Validators.required],
-   'Descricao' : [null, Validators.required],
-   'Ativo' : [null, Validators.required]
+    'idClasse' : [0, Validators.required],
+    'Nome' : [null, Validators.required],
+    'Descricao' : [null, Validators.required],
+    'Ativo' : [true, Validators.required]
  });
  }
  getClasse(id) {
   this.api.getClasse(id).subscribe(data => {
     this.idClasse = data.idClasse;
     this.productForm.setValue({
-      Nome: data.Nome,
-      Descricao: data.Descricao,
-      Ativo: data.Ativo
+      idClasse: data.idClasse,
+      nome: data.Nome,
+      descricao: data.Descricao,
+      ativo: data.Ativo
     });
   });
 }
