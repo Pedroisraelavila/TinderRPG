@@ -15,5 +15,12 @@ namespace TinderRPG.Infra
                 .Classe
                 .Where(c => c.Ativo);
         }
+
+        public Classe BuscarPorId(int id)
+        {
+            return Contexto
+                .Classe
+                .SingleOrDefault(c => c.idClasse == id);
+        }
     }
 }

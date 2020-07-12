@@ -16,7 +16,7 @@ export class ClasseDetalhesComponent implements OnInit {
 
 
   ngOnInit() {
-    this.getClasse(this.route.snapshot.params['idClasse']);
+    this.getClasse(this.route.snapshot.params['id']);
   }
 
   getClasse(id) {

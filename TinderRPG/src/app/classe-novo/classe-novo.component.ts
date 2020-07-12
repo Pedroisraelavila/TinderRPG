@@ -17,10 +17,10 @@ export class ClasseNovoComponent implements OnInit {
 
   ngOnInit() {
     this.productForm = this.formBuilder.group({
-   'idClasse' : [null, Validators.required],
+   'idClasse' : [0],
    'Nome' : [null, Validators.required],
    'Descricao' : [null, Validators.required],
-   'Ativo' : [null, Validators.required]
+   'Ativo' : [1]
  });
  }
 

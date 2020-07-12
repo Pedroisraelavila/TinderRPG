@@ -9,7 +9,7 @@ const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
 //const apiUrl = 'http://localhost:5000/api/classe';
-const apiUrl = 'http://localhost:52985/api/classe';
+const apiUrl = 'http://localhost:52985/Classe';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class ApiService {
 
   getClasses (): Observable<Classe[]> {
     const url = `${apiUrl}/Ativos`;
-    return this.http.get<Classe[]>(apiUrl)
+    return this.http.get<Classe[]>(url)
       .pipe(
         tap(classes => console.log('leu as classes')),
         catchError(this.handleError('getClasses', []))
@@ -36,9 +36,9 @@ export class ApiService {
   }
 
   addClasse (classe): Observable<Classe> {
-    return this.http.post<Classe>(apiUrl, classe, httpOptions).pipe(
+    return this.http.post<Classe>(`${apiUrl}/Salvar`, classe, httpOptions).pipe(
       // tslint:disable-next-line:no-shadowed-variable
-      tap((produto: Classe) => console.log(`adicionou a classe com w/ id=${produto.idClasse}`)),
+      tap((classe: Classe) => console.log(`adicionou a classe com w/ id=${classe.idClasse}`)),
       catchError(this.handleError<Classe>('addClasse'))
     );
   }

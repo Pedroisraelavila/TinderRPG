@@ -21,6 +21,7 @@ namespace TinderRPG.API
         }
 
         public IConfiguration Configuration { get; }
+        //readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -43,7 +44,11 @@ namespace TinderRPG.API
             });
 
             services.AddMvc();
-            services.AddCors();
+            //services.AddCors();
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,9 +64,9 @@ namespace TinderRPG.API
             app.UseSwaggerUI(c => {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "teste");
             });
-            app.UseStaticFiles();
-            app.UseCors(option => option.AllowAnyOrigin()); 
             app.UseRouting();
+            app.UseStaticFiles();
+            app.UseCors(options => options.AllowAnyOrigin());
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {

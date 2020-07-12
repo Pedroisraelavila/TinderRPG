@@ -36,5 +36,11 @@ namespace TinderRPG.API.Controllers
         {
             return _classeServico.Excluir(entidade);
         }
+
+        [HttpGet("{id}")]
+        public Classe BuscarPorId(int id)
+        {
+            return _classeServico.BuscarPorId(id);
+        }
     }
 }
