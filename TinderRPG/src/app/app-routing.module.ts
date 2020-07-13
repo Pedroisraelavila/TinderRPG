@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ClasseTodosComponent } from './classe-todos/classe-todos.component';
-import { ClasseDetalhesComponent } from './classe-detalhes/classe-detalhes.component';
-import { ClasseEditarComponent } from './classe-editar/classe-editar.component';
-import { ClasseNovoComponent } from './classe-novo/classe-novo.component';
+import { ClasseTodosComponent } from './classe/classe-todos/classe-todos.component';
+import { ClasseDetalhesComponent } from './classe/classe-detalhes/classe-detalhes.component';
+import { ClasseEditarComponent } from './classe/classe-editar/classe-editar.component';
+import { ClasseNovoComponent } from './classe/classe-novo/classe-novo.component';
+import { PersonagemTodosComponent } from './personagem/personagem-todos/personagem-todos.component';
 
 const routes: Routes = [
   {
@@ -29,7 +30,12 @@ const routes: Routes = [
   { path: '',
     redirectTo: '/classe-todos',
     pathMatch: 'full'
-  }
+  },
+  {
+    path: 'personagem-todos',
+    component: PersonagemTodosComponent,
+    data: { title: 'Lista de Personagens' }
+  },
 ];
 
 @NgModule({

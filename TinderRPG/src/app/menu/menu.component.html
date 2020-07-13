@@ -16,6 +16,10 @@
         <i class="fa fa-plus"></i>
         <span> Nova Classe</span>
       </a>
+      <!-- <a mat-list-item routerLink="/personagem-todos" routerLinkActive="active">
+        <i class="fa fa-plus"></i>
+        <span> Personagens</span>
+      </a> -->
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -28,7 +32,9 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>lista-crud-app</span>
+      <span>
+        <img [src]="imgLogo2" height="60px"> 
+      </span>
     </mat-toolbar>
     <div class="container">
    <router-outlet></router-outlet>
