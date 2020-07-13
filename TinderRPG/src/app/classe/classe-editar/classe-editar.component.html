@@ -3,15 +3,15 @@
   </div>
   <form class="example-container" [formGroup]="productForm" (ngSubmit)="updateClasse(productForm.value)">
     <input hidden name="idClasse" placeholder="ID" formControlName="idClasse">
-    <input hidden name="Ativo" placeholder="Ativo" formControlName="Ativo">
+    <input hidden name="ativo" placeholder="ativo" formControlName="ativo">
 
-    <br>
+    <br>  
     <mat-form-field>
-      <input matInput name="Nome" placeholder="Nome da Classe" formControlName="Nome">
+      <input matInput name="nome" placeholder="Nome da Classe" formControlName="nome">
     </mat-form-field>
     <br>
     <mat-form-field>
-      <textarea  matInput name="Descricao" placeholder="Descrição da Classe" formControlName="Descricao"></textarea>
+      <textarea  matInput name="descricao" placeholder="Descrição da Classe" formControlName="descricao"></textarea>
     </mat-form-field>
     <br>
 

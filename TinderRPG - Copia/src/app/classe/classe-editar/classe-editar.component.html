@@ -1,0 +1,22 @@
+<div>
+    <h3>Editar Classe</h3>
+  </div>
+  <form class="example-container" [formGroup]="productForm" (ngSubmit)="updateClasse(productForm.value)">
+    <input hidden name="idClasse" placeholder="ID" formControlName="idClasse">
+    <input hidden name="Ativo" placeholder="Ativo" formControlName="Ativo">
+
+    <br>  
+    <mat-form-field>
+      <input matInput name="Nome" placeholder="Nome da Classe" formControlName="Nome">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <textarea  matInput name="Descricao" placeholder="Descrição da Classe" formControlName="Descricao"></textarea>
+    </mat-form-field>
+    <br>
+
+    <button type="submit" [disabled]="!productForm.valid" mat-flat-button color="primary" >
+      <mat-icon>save</mat-icon>
+      Salvar alterações
+    </button>
+  </form>

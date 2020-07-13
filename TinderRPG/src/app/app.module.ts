@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ClasseTodosComponent } from './classe-todos/classe-todos.component';
-import { ClasseDetalhesComponent } from './classe-detalhes/classe-detalhes.component';
-import { ClasseNovoComponent } from './classe-novo/classe-novo.component';
-import { ClasseEditarComponent } from './classe-editar/classe-editar.component';
+import { ClasseTodosComponent } from './classe/classe-todos/classe-todos.component';
+import { ClasseDetalhesComponent } from './classe/classe-detalhes/classe-detalhes.component';
+import { ClasseNovoComponent } from './classe/classe-novo/classe-novo.component';
+import { ClasseEditarComponent } from './classe/classe-editar/classe-editar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -49,6 +49,10 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MenuComponent } from './menu/menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HeaderComponent } from './header/header.component';
+import { PersonagemTodosComponent } from './personagem/personagem-todos/personagem-todos.component';
+import { PersonagemNovoComponent } from './personagem/personagem-novo/personagem-novo.component';
+import { PersonagemEditarComponent } from './personagem/personagem-editar/personagem-editar.component';
+import { PersonagemDetalhesComponent } from './personagem/personagem-detalhes/personagem-detalhes.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +63,10 @@ import { HeaderComponent } from './header/header.component';
     ClasseEditarComponent,
     MenuComponent,
     HeaderComponent,
+    PersonagemTodosComponent,
+    PersonagemNovoComponent,
+    PersonagemEditarComponent,
+    PersonagemDetalhesComponent,
   ],
   imports: [
     BrowserModule,

@@ -37,13 +37,13 @@ namespace TinderRPG.API
                 c.SwaggerDoc("v1",
                     new OpenApiInfo
                     {
-                        Title = "HousePlan",
+                        Title = "TinderRPG",
                         Version = "v1",
-                        Description = "Sistema que atende a demanda de engenheiros e arquitetos deixando-os mais proximo do cliente",
+                        Description = "Sistema para cadastro de classes de RPG",
                         Contact = new OpenApiContact
                         {
-                            Name = "Igor Lacereda - HousePlan",
-                            Url = new Uri("https://github.com/igorlacerdak")
+                            Name = "Paulo Henrique - Pedro Israel",
+                            Url = new Uri("https://github.com/Pedroisraelavila/TinderRPG")
                         }
                     });
             });

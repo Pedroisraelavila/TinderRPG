@@ -1,0 +1,26 @@
+<div class="example-container mat-elevation-z8">
+    <div class="example-loading-shade"
+         *ngIf="isLoadingResults">
+      <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+    </div>
+    <div class="button-row">
+      <button mat-button color="basic" [routerLink]="['/classe-todos']">
+        <i class="fa fa-arrow-left"></i>
+        Voltar
+      </button>
+    </div>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title><h2>{{classe.nome}}</h2></mat-card-title>
+        <mat-card-subtitle>{{classe.descricao}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+       
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-flat-button color="accent" class="teste" [routerLink]="['/classe-editar', classe.idClasse]"><mat-icon>edit</mat-icon> Editar</button>
+        <!-- <button mat-flat-button color="accent" class="teste" [routerLink]="['/classe-editar', classe.idClasse]"><mat-icon>clear</mat-icon> Inativar</button> -->
+        <button mat-flat-button color="warn" (click)="deleteClasse(classe)"><mat-icon>delete</mat-icon> Excluir</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>

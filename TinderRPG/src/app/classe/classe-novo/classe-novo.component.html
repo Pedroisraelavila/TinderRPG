@@ -1,0 +1,19 @@
+<div>
+  <h3>Adicionar nova Classe</h3>
+</div>
+<form class="example-container" [formGroup]="productForm" (ngSubmit)="addClasse(productForm.value)">
+  <input hidden name="idClasse" formControlName="idClasse">
+  <input hidden name="ativo" formControlName="ativo">
+  <mat-form-field>
+    <input matInput name="nome" placeholder="Nome da Classe" formControlName="nome">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <textarea  matInput name="descricao" placeholder="Descrição da Classe" formControlName="descricao"></textarea>
+  </mat-form-field>
+  <br>
+  <button type="submit" [disabled]="!productForm.valid" mat-flat-button color="primary" >
+    <mat-icon>save</mat-icon>
+    Adicionar
+  </button>
+</form>

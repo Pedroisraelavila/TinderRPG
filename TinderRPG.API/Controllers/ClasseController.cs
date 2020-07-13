@@ -11,7 +11,7 @@ namespace TinderRPG.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ClasseController : ControllerBase
+    public class ClasseController : ControllerBase 
     {
         private readonly ClasseServico _classeServico;
         public ClasseController()
