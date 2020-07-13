@@ -21,12 +21,15 @@ namespace TinderRPG.API
         }
 
         public IConfiguration Configuration { get; }
-        //readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddControllers();
+            services.AddMvc();
+
+            services.AddCors();
+
             services.AddControllers();
 
             services.AddSwaggerGen(c => {
@@ -34,40 +37,45 @@ namespace TinderRPG.API
                 c.SwaggerDoc("v1",
                     new OpenApiInfo
                     {
-                        Title = "Teste",
+                        Title = "HousePlan",
                         Version = "v1",
+                        Description = "Sistema que atende a demanda de engenheiros e arquitetos deixando-os mais proximo do cliente",
                         Contact = new OpenApiContact
                         {
-                            Name = "Paulo Henrique"
+                            Name = "Igor Lacereda - HousePlan",
+                            Url = new Uri("https://github.com/igorlacerdak")
                         }
                     });
-            });
-
-            services.AddMvc();
-            //services.AddCors();
-            services.AddCors(c =>
-            {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
             });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseAuthentication();
 
+
+            // Ativando middlewares para uso do Swagger
             app.UseSwagger();
             app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "teste");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "House Plan");
             });
+
             app.UseRouting();
-            app.UseStaticFiles();
-            app.UseCors(options => options.AllowAnyOrigin());
+
+            app.UseCors(x =>
+                x.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+            );
+
             app.UseAuthorization();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

@@ -1,9 +1,9 @@
 C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Dominio\bin\Debug\netcoreapp3.1\TinderRPG.Dominio.deps.json
 C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Dominio\bin\Debug\netcoreapp3.1\TinderRPG.Dominio.dll
 C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Dominio\bin\Debug\netcoreapp3.1\TinderRPG.Dominio.pdb
-C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Dominio\obj\Debug\netcoreapp3.1\TinderRPG.Dominio.csprojAssemblyReference.cache
 C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Dominio\obj\Debug\netcoreapp3.1\TinderRPG.Dominio.csproj.CoreCompileInputs.cache
 C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Dominio\obj\Debug\netcoreapp3.1\TinderRPG.Dominio.AssemblyInfoInputs.cache
 C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Dominio\obj\Debug\netcoreapp3.1\TinderRPG.Dominio.AssemblyInfo.cs
 C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Dominio\obj\Debug\netcoreapp3.1\TinderRPG.Dominio.dll
 C:\Users\paulo\Source\Repos\TinderRPG\TinderRPG.Dominio\obj\Debug\netcoreapp3.1\TinderRPG.Dominio.pdb
+C:\Users\paulo\source\repos\TinderRPG\TinderRPG.Dominio\obj\Debug\netcoreapp3.1\TinderRPG.Dominio.csprojAssemblyReference.cache

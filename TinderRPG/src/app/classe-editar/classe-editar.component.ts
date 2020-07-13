@@ -23,7 +23,7 @@ export class ClasseEditarComponent implements OnInit {
     this.productForm = this.formBuilder.group({
     'idClasse' : [0, Validators.required],
     'Nome' : [null, Validators.required],
-    'Descricao' : [null, Validators.required],
+    'Descricao' : [null, Validators.required, Validators.maxLength(500)],
     'Ativo' : [true, Validators.required]
  });
  }
@@ -32,16 +32,16 @@ export class ClasseEditarComponent implements OnInit {
     this.idClasse = data.idClasse;
     this.productForm.setValue({
       idClasse: data.idClasse,
-      nome: data.Nome,
-      descricao: data.Descricao,
-      ativo: data.Ativo
+      Nome: data.nome,
+      Descricao: data.descricao,
+      Ativo: data.ativo
     });
   });
 }
 
 updateClasse(form: NgForm) {
   this.isLoadingResults = true;
-  this.api.updateClasse(this.idClasse, form)
+  this.api.updateClasse(form)
     .subscribe(res => {
         this.isLoadingResults = false;
         this.router.navigate(['/classe-detalhe/' + this.idClasse]);

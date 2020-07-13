@@ -43,19 +43,25 @@ export class ApiService {
     );
   }
 
-  updateClasse(id, classe): Observable<any> {
-    const url = `${apiUrl}/${id}`;
-    return this.http.put(url, classe, httpOptions).pipe(
-      tap(_ => console.log(`atualiza a classe com id=${id}`)),
-      catchError(this.handleError<any>('updateClasse'))
+  updateClasse (classe): Observable<Classe> {
+    return this.http.post<Classe>(`${apiUrl}/Salvar`, classe, httpOptions).pipe(
+      // tslint:disable-next-line:no-shadowed-variable
+      tap((classe: Classe) => console.log(`atualizou a classe com w/ id=${classe.idClasse}`)),
+      catchError(this.handleError<Classe>('updateClasse'))
     );
   }
+  // updateClasse(id, classe): Observable<any> {
+  //   const url = `${apiUrl}/${id}`;
+  //   return this.http.put(url, classe, httpOptions).pipe(
+  //     tap(_ => console.log(`atualiza a classe com id=${id}`)),
+  //     catchError(this.handleError<any>('updateClasse'))
+  //   );
+  // }
 
-  deleteClasse (id): Observable<Classe> {
-    const url = `${apiUrl}/Excluir/${id}`;
-
-    return this.http.delete<Classe>(url, httpOptions).pipe(
-      tap(_ => console.log(`remove a classe com id=${id}`)),
+  deleteClasse (classe): Observable<Classe> {
+    return this.http.post<Classe>(`${apiUrl}/Excluir`, classe, httpOptions).pipe(
+      // tslint:disable-next-line:no-shadowed-variable
+      tap((classe: Classe) => console.log(`Excluiu a classe com w/ id=${classe.idClasse}`)),
       catchError(this.handleError<Classe>('deleteClasse'))
     );
   }

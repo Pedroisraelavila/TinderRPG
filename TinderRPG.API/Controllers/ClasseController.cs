@@ -25,22 +25,23 @@ namespace TinderRPG.API.Controllers
             return _classeServico.ListarAtivos();
         }
 
+        [HttpGet("{id}")]
+        public Classe BuscarPorId(int id)
+        {
+            return _classeServico.BuscarPorId(id);
+        }
+
         [HttpPost("Salvar")]
         public NotificationResult Salvar(Classe entidade)
         {
             return _classeServico.Salvar(entidade);
         }
 
-        [HttpDelete("Excluir")]
-        public string Excluir(Classe entidade)
+        [HttpPost("Excluir")]
+        public NotificationResult Excluir(Classe entidade)
         {
             return _classeServico.Excluir(entidade);
         }
 
-        [HttpGet("{id}")]
-        public Classe BuscarPorId(int id)
-        {
-            return _classeServico.BuscarPorId(id);
-        }
     }
 }
