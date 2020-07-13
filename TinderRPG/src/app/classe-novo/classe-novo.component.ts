@@ -19,8 +19,8 @@ export class ClasseNovoComponent implements OnInit {
     this.productForm = this.formBuilder.group({
    'idClasse' : [0],
    'Nome' : [null, Validators.required],
-   'Descricao' : [null, Validators.required],
-   'Ativo' : [1]
+   'Descricao' : [null, Validators.required, Validators.maxLength(500)],
+   'Ativo' : [true]
  });
  }
 

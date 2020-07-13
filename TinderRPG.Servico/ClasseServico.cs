@@ -55,9 +55,22 @@ namespace TinderRPG.Servico
             return _classeRepositorio.BuscarPorId(id);
         }
 
-        public string Excluir(Classe entidade)
+        public NotificationResult Excluir(Classe ent)
         {
-            return "";
+            var notificationResult = new NotificationResult();
+
+            try
+            {
+                ent.Ativo = false;
+                _classeRepositorio.Atualizar(ent);
+                notificationResult.Result = ent;
+
+                return notificationResult;
+            }
+            catch (Exception ex)
+            {
+                return notificationResult.Add(new NotificationError(ex.Message));
+            }
         }
 
         public IEnumerable<Classe> ListarTodos()
