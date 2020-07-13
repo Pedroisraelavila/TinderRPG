@@ -21,10 +21,10 @@ export class ClasseEditarComponent implements OnInit {
   ngOnInit() {
     this.getClasse(this.route.snapshot.params['id']);
     this.productForm = this.formBuilder.group({
-    'idClasse' : [0, Validators.required],
+    'idClasse' : [0],
     'Nome' : [null, Validators.required],
-    'Descricao' : [null, Validators.required, Validators.maxLength(500)],
-    'Ativo' : [true, Validators.required]
+    'Descricao' : [null, Validators.required],
+    'Ativo' : [true]
  });
  }
  getClasse(id) {

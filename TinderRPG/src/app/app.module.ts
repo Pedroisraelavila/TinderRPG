@@ -48,6 +48,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { MenuComponent } from './menu/menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     ClasseNovoComponent,
     ClasseEditarComponent,
     MenuComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
