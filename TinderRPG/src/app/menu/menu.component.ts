@@ -17,5 +17,5 @@ export class MenuComponent {
     );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
-
+  imgLogo = '/assets/logo.png';
 }
